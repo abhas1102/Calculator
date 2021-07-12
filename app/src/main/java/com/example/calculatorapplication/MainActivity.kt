@@ -20,4 +20,12 @@ class MainActivity : AppCompatActivity() {
     fun onClear(view: View){
         calculation_view.setText("")
     }
+
+    fun onDecimal(view: View){
+        if(calculation_view.text.contains(".")|| calculation_view.text==""){
+            calculation_view.text
+        } else{
+            calculation_view.append(".")
+        }
+    }
 }

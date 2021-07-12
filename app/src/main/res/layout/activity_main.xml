@@ -181,7 +181,7 @@
             <Button
                 android:id="@+id/btnDot"
                 android:layout_width="0dp"
-                android:onClick="onDigit"
+                android:onClick="onDecimal"
                 android:layout_height="match_parent"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
