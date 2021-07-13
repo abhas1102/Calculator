@@ -11,7 +11,13 @@
     <TextView
         android:id="@+id/calculation_view"
         android:layout_width="match_parent"
+        android:background="#efefef"
+        android:textSize="48sp"
+        android:maxLength="12"
+        android:padding="10dp"
+        android:gravity="right|center_vertical|bottom"
         android:layout_height="250dp"
+
 
        />
 
@@ -61,7 +67,7 @@
         <Button
             android:id="@+id/btnMultiply"
             android:layout_width="0dp"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#FF9800"
@@ -112,7 +118,7 @@
             <Button
                 android:id="@+id/btnDivide"
                 android:layout_width="0dp"
-                android:onClick="onDigit"
+                android:onClick="onOperator"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#FF9800"
@@ -165,7 +171,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onDigit"
+                android:onClick="onOperator"
                 android:backgroundTint="#FF9800"
                 android:text="-"
                 android:textColor="@color/black" />
@@ -214,7 +220,7 @@
             <Button
                 android:id="@+id/btnAdd"
                 android:layout_width="0dp"
-                android:onClick="onDigit"
+                android:onClick="onOperator"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#FF9800"
@@ -234,7 +240,9 @@
             android:id="@+id/btnEquals"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="#FFFFFF"
+
+            android:onClick="OnEqual"
+            android:backgroundTint="#FF9800"
             android:text="="
             android:textColor="@color/black" />
     </LinearLayout>
